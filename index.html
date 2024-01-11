@@ -17,7 +17,7 @@
       <!-- header Start -->
       <header class="header">
          <div class="container">
-            <div class="header-main">
+            <div class="header-main d-flex justify-content-between align-items-center">
                <div class="header-logo">
                   <a href="index.html"><span>tws</span>tudy</a>
                </div>
@@ -25,11 +25,27 @@
                   <span></span>
                </button>
                <div class="header-backdrop js-header-backdrop"></div>
-               <nav class="header-menu">
+               <nav class="header-menu js-header-menu">
+                  <button class="header-close-btn js-header-menu-toggler">
+                     <i class="fas fa-times"></i>
+                  </button>
                   <ul class="menu">
                      <li class="menu-item"><a href="index.html">home</a></li>
-                     <li class="menu-item"><a href="#">courses</a></li>
-                     <li class="menu-item"><a href="#">pages</a></li>
+                     <li class="menu-item menu-item-has-children"><a class="js-toggle-sub-menu" href="#">courses <i
+                              class="fas fa-chevron-down"></i></a>
+
+                        <ul class="sub-menu js-sub-menu">
+                           <li class="sub-menu-item"><a href="courses.html">course</a></li>
+                           <li class="sub-menu-item"><a href="course-detail.html">course details</a></li>
+                        </ul>
+                     </li>
+                     <li class="menu-item menu-item-has-children"><a class="js-toggle-sub-menu" href="#">pages <i
+                              class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu js-sub-menu">
+                           <li class="sub-menu-item"><a href="log-in.html">log in</a></li>
+                           <li class="sub-menu-item"><a href="sign-up.html">sign up</a></li>
+                        </ul>
+                     </li>
                      <li class="menu-item"><a href="index.html">contact</a></li>
                   </ul>
                </nav>
