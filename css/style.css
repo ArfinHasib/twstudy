@@ -224,3 +224,40 @@ h6 {
 .btn-theme:focus {
    box-shadow: 0 0 8px var(--main-color);
 }
+
+/* box */
+.box {
+   background-color: var(--white);
+   border-radius: 5px;
+   box-shadow: var(--shadow);
+   padding: 30px;
+}
+
+/* fun-facts section */
+.fun-facts-item {
+   padding: 15px 0;
+}
+
+.fun-facts-item h2 {
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.fun-facts-item p {
+   margin: 0;
+   text-transform: uppercase;
+}
+
+.fun-facts-item .style-1 {
+   color: var(--black-70);
+}
+.fun-facts-item .style-2 {
+   color: var(--green-light);
+}
+.fun-facts-item .style-3 {
+   color: var(--red-light);
+}
+.fun-facts-item .style-4 {
+   color: var(--orange-light);
+}
