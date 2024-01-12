@@ -472,3 +472,8 @@ h3 {
    top: 60%;
    background-color: var(--green-light);
 }
+
+/* bai section */
+.bai-section .circular-img-circle {
+   background-color: var(--yellow-light);
+}
