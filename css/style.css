@@ -579,3 +579,20 @@ nav-tabs .nav-link:hover {
    border-color: transparent;
    color: var(--WHITE);
 }
+
+/* pagination */
+.page-item.disabled .page-link,
+.page-link {
+   border: none;
+   background-color: transparent;
+   color: var(--black-70);
+}
+
+.page-item.active .page-link {
+   background-color: var(--main-color);
+}
+
+.page-link:hover {
+   background-color: var(--main-color);
+   color: var(--WHITE);
+}
