@@ -268,6 +268,10 @@ h4 {
    width: 100%;
 }
 
+.btn-form {
+   height: 48px;
+}
+
 /* box */
 .box {
    background-color: var(--white);
@@ -821,10 +825,19 @@ nav-tabs .nav-link:hover {
 }
 
 /* forms */
+.form-title {
+   font-size: 24px;
+   margin: 0 0 30px;
+   font-weight: 600;
+}
+
+.form-control::placeholder {
+   color: var(--black-70);
+}
+
 .form-group {
    margin-bottom: 25px;
    position: relative;
-   width: 30%;
 }
 
 .form-control {
