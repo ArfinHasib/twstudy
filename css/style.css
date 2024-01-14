@@ -739,3 +739,113 @@ nav-tabs .nav-link:hover {
 .course-instructor ul li:not(:last-child) {
    margin-bottom: 5px;
 }
+
+/* course reviews */
+.rating-summary .average-rating {
+   font-size: 40px;
+   font-weight: 700;
+   color: var(--black-90);
+}
+
+.rating-summary .average-stars {
+   color: var(--orange);
+}
+
+.rating-summary .rating-bars-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 8px;
+}
+
+.rating-summary .progress {
+   height: 8px;
+   background-color: var(--border-color-2);
+   width: calc(100% - 120px);
+   margin-right: 20px;
+   border-radius: 0;
+}
+
+.rating-summary .progress-bar {
+   background-color: var(--main-color);
+}
+
+.rating-summary .star-text {
+   min-width: 60px;
+   color: var(--orange);
+}
+
+.reviews-filter {
+   margin: 0 0 35px;
+   width: 200px;
+}
+
+.reviews-item {
+   position: relative;
+   margin-bottom: 30px;
+   padding-left: 60px;
+}
+
+.reviews-item .img-box {
+   max-width: 50px;
+   border-radius: 50%;
+   overflow: hidden;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+.reviews-item h4 {
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+   margin: 0 0 5px;
+   color: var(--black-90);
+}
+
+.reviews-item .star-rating i {
+   color: var(--orange);
+   font-size: 14px;
+}
+
+.reviews-item .star-rating .date {
+   margin-left: 5px;
+   font-size: 14px;
+   display: inline-block;
+}
+
+.reviews-item p {
+   margin: 5px 0 0;
+}
+
+/* forms */
+.form-group {
+   margin-bottom: 25px;
+   position: relative;
+   width: 30%;
+}
+
+.form-control {
+   height: 48px;
+   border-color: var(--border-color-2);
+   color: var(--black-90);
+   background-color: transparent;
+}
+
+.form-control:focus {
+   background-color: transparent;
+   border-color: var(--border-color-1);
+   color: var(--black-90);
+   box-shadow: none;
+}
+
+.select-icon {
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+   font-size: 13px;
+}
+
+select.form-control:focus option {
+   background-color: var(--select-box-bg-color);
+}
