@@ -480,7 +480,7 @@
             <div class="col-lg-4">
                <!-- course sidebar start -->
                <div class="course-sidebar box">
-                  <div class="img-box position-relative">
+                  <div class="img-box position-relative" data-bs-toggle="modal" data-bs-target="#video-modal">
                      <img src="img/courses/web-development/3.jpg" class="w-100" alt="course img">
                      <div class="play-icon">
                         <i class="fas fa-play"></i>
@@ -575,8 +575,26 @@
    <!-- footer end -->
    <!-- Main wrapper End -->
 
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/main.js"></script>
+   <!-- course preview modal start -->
+   <div class="modal fade video-modal js-course-prevew-modal" id="video-modal" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+               </button>
+               <div class="ratio ratio-16x9">
+                  <video controls class="js-course-prevew-video">
+                     <source src="video/course-preview.mp4" type="video/mp4">
+                  </video>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- course preview modal end -->
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
