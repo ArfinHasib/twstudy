@@ -130,3 +130,35 @@ function themeLightDark() {
 }
 
 themeLightDark();
+
+// Theme Glass effect
+function themeGlassEffect() {
+   const glassEffectCheckbox = document.querySelector('.js-glass-effect'),
+      glassStyle = document.querySelector('.js-glass-style');
+
+   glassEffectCheckbox.addEventListener('click', function () {
+      if (this.checked) {
+         localStorage.setItem('glass-effect', 'true');
+      } else {
+         localStorage.setItem('glass-effect', 'false');
+      }
+      glass();
+   });
+
+   function glass() {
+      if (localStorage.getItem('glass-effect') === 'true') {
+         glassStyle.removeAttribute('disabled');
+      } else {
+         glassStyle.disabled = true;
+      }
+   }
+   if (localStorage.getItem('glass-effect') !== null) {
+      glass();
+   }
+
+   if (!glassStyle.hasAttribute('disabled')) {
+      glassEffectCheckbox.checked = true;
+   }
+}
+
+themeGlassEffect();
