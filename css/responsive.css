@@ -138,6 +138,21 @@
       height: 280px;
       width: 280px;
    }
+   .banner-text h1 {
+      font-size: 35px;
+   }
+
+   .section-title .sub-title {
+      font-size: 30px;
+   }
+
+   .course-sidebar {
+      margin-top: 30px;
+   }
+
+   .course-instructor .img-box img {
+      width: 100px;
+   }
 }
 
 @media (max-width: 767px) {
