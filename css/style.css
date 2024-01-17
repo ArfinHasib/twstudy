@@ -717,6 +717,11 @@ nav-tabs .nav-link:hover {
    position: relative;
    padding: 0 50px 0 20px;
 }
+
+.course-curriculam ul li:not(:last-child) {
+   margin-bottom: 10px;
+}
+
 .course-curriculam ul li span {
    position: absolute;
    font-size: 14px;
