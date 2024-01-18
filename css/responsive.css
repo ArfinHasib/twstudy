@@ -207,7 +207,10 @@
       padding: 0 0 0 20px;
    }
 
-   .rating {
+   .rating-box {
+      margin-bottom: 15px;
+   }
+   .rating-summary {
       margin-bottom: 15px;
    }
 }
