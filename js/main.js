@@ -233,3 +233,11 @@ function themeGlassEffect() {
 }
 
 themeGlassEffect();
+
+// page loader
+window.addEventListener('load', () => {
+   document.querySelector('.js-page-loader').classList.add('fade-out');
+   setTimeout(() => {
+      document.querySelector('.js-page-loader').style.display = 'none';
+   }, 600);
+});
